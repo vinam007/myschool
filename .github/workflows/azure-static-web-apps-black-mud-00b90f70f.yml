@@ -16,7 +16,10 @@ jobs:
     name: Build and Deploy Job
     steps:
       - uses: actions/checkout@v3
-
+        with:
+          submodules: true
+          lfs: false
+          persist-credentials: false  # Add this line
       # Step 1: Setup Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v3
@@ -41,3 +44,5 @@ jobs:
           app_location: "/"          # path to your React app
           api_location: ""           # empty if no API
           output_location: "build"   # build folder
+      - name: Fix permissions
+        run: sudo chown -R $USER:$USER .git
