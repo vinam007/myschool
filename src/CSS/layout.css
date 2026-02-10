@@ -1,0 +1,40 @@
+.layout {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  height: 60px;
+  background: #222;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.footer {
+  height: 50px;
+  background: #222;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.body {
+  flex: 1;
+  display: flex;
+}
+
+.sidebar {
+  width: 220px;
+  background: #eee;
+  padding: 20px;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  overflow: auto;
+}
