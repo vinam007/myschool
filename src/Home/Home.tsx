@@ -8,7 +8,7 @@ const Home = () => {
 useEffect(() => {    
  console.log('mounted Home');
     return () => {
-        console.log('unmounted Home');
+        console.log('unmounted Home fdsgsgs');
     };
    }, []); 
 
